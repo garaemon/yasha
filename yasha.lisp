@@ -5,7 +5,7 @@
 ;;================================================
 
 (defpackage :yasha
-  (:use #:common-lisp #:chimi)
+  (:use #:common-lisp #:chimi #:usocket)
   (:export
    ;; socket
    #:socket-listen #:socket-stream

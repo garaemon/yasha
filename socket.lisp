@@ -23,7 +23,7 @@
    (receive-mutex (make-mutex))))
 
 (defmethod read-proc ((server <socket-server>) socket mutex)
-  ;; echo server
+  ;; default, work as a echo server
   (let ((line (read-line (socket-stream socket) nil)))
     (if line
         (progn
